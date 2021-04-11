@@ -7,9 +7,21 @@
 </p>
 
 <p align="middle">
-  <img src="results/1/mode_1.jpg" width="30%"></img>
-  <img src="results/1/mode_2.jpg" width="30%"></img>
-  <img src="results/1/mode_3.jpg" width="30%"></img>
+  <img src="results/1/mode_1_plus.jpg" width="30%"></img>
+  <img src="results/1/aligned_pointsets.jpg" width="30%"></img>
+  <img src="results/1/mode_1_minus.jpg" width="30%"></img>
+</p>
+
+<p align="middle">
+  <img src="results/1/mode_2_plus.jpg" width="30%"></img>
+  <img src="results/1/aligned_pointsets.jpg" width="30%"></img>
+  <img src="results/1/mode_2_minus.jpg" width="30%"></img>
+</p>
+
+<p align="middle">
+  <img src="results/1/mode_3_plus.jpg" width="30%"></img>
+  <img src="results/1/aligned_pointsets.jpg" width="30%"></img>
+  <img src="results/1/mode_3_minus.jpg" width="30%"></img>
 </p>
 
 Statistical analysis of 2D shapes based on 
@@ -21,6 +33,7 @@ The dataset of 2D face images is publicly available here: [IMM Face Database](ht
 Download the data from the above link, place the files [`data_clean.sh`](data/data_clean.sh) and [`to_mat.py`](data/to_mat.py) in the root directory of the downloaded data and run:
   1. `bash data_clean.sh`
   2. `python3 to_mat.py`
+
 This will create [`faces2D.mat`](data/faces2D.mat) in the `data` directory.
        
 ## Usage:
@@ -42,7 +55,3 @@ This will create [`faces2D.mat`](data/faces2D.mat) in the `data` directory.
  - [`code/plotPointsets.m`](code/plotPointsets.m) : Plots the set of pointsets as a scatter plot, each
     pointset in a different color
  - [`code/plotWithMode.m`](code/plotWithMode.m) : Plots the pointsets along with two sets of variation about the mean along the given mode of variation
-
----
-
-*(This was done as a course assignment for CS736: Medical Image Computing, Spring 2021, IIT Bombay)*
