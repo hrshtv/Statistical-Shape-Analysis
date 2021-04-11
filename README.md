@@ -16,10 +16,15 @@ Statistical analysis of 2D shapes based on
 ["Generalized Procrustes Analysis" (Gower, J.C.)](https://link.springer.com/article/10.1007%2FBF02291478) and 
 ["Active Shape Models - Their Training and Application" (Cootes et al.)](https://www.sciencedirect.com/science/article/abs/pii/S1077314285710041)  
 
-The dataset of 2D hand images is publicly available [here](http://www.imm.dtu.dk/~aam/datasets/datasets.html)
+## Data:
+The dataset of 2D face images is publicly available here: [IMM Face Database](http://www.imm.dtu.dk/~aam/datasets/datasets.html).  
+Download the data from the above link, place the files [`data_clean.sh`](data/data_clean.sh) and [`to_mat.py`](data/to_mat.py) in the root directory of the downloaded data and run:
+  1. `bash data_clean.sh`
+  2. `python3 to_mat.py`
+This will create [`faces2D.mat`](data/faces2D.mat) in the `data` directory.
        
 ## Usage:
-See [`code/main_1.mlx`](code/main_2.mlx) for approach based on Generalized Procrustes Analysis and [`code/main_2.mlx`](code/main_2.mlx) for approach based on Active Shape Models.
+- See [`code/main_1.mlx`](code/main_2.mlx) for approach based on Generalized Procrustes Analysis and [`code/main_2.mlx`](code/main_2.mlx) for approach based on Active Shape Models.
 
 ## Documentation:
  - [`code/main_1.mlx`](code/main_1.mlx) : Main script for the approach based on Generalized Procrustes Analysis

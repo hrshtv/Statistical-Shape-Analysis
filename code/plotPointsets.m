@@ -10,7 +10,7 @@
         mu [DxN] : The mean shape
 %}
 
-function plotPointsets(pointsets, title_str, mode, mu)
+function plotPointsets(pointsets, title_str, mode, mu, segments)
         
     M = size(pointsets, 3);
     for i = 1:M
@@ -25,10 +25,15 @@ function plotPointsets(pointsets, title_str, mode, mu)
     xlabel("x");
     ylabel("y");
 
-    rng(10);
     if mode == "with_mean"
-        color = rand(1, 3);  
-        fig_mu = patch(mu(1, :), mu(2, :), [0 0 0], 'FaceColor', 'None', 'EdgeColor', color, 'LineWidth', 2.5);
+        for sno = unique(segments)
+            mask = segments == sno;
+            mu_1 = mu(1, mask);
+            mu_2 = mu(2, mask);
+            fig_mu = plot(mu_1, mu_2, 'Color', [1 0 0], 'LineWidth', 2.5);
+            %fig_mu = patch(mu_1, mu_2, [0 0 0], 'FaceColor', 'None', 'EdgeColor', color, 'LineWidth', 2.5);
+        end  
+        %fig_mu = patch(mu(1, :), mu(2, :), [0 0 0], 'FaceColor', 'None', 'EdgeColor', color, 'LineWidth', 2.5);
         legend(fig_mu, "\mu", "Location", "best");
     end
 
