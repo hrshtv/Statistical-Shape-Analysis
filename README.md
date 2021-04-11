@@ -7,18 +7,21 @@
 </p>
 
 <p align="middle">
+  First Mode of Variation <br><br>
   <img src="results/1/mode_1_plus.jpg" width="30%"></img>
   <img src="results/1/aligned_pointsets.jpg" width="30%"></img>
   <img src="results/1/mode_1_minus.jpg" width="30%"></img>
 </p>
 
 <p align="middle">
+  Second Mode of Variation <br><br>
   <img src="results/1/mode_2_plus.jpg" width="30%"></img>
   <img src="results/1/aligned_pointsets.jpg" width="30%"></img>
   <img src="results/1/mode_2_minus.jpg" width="30%"></img>
 </p>
 
 <p align="middle">
+  Third Mode of Variation <br><br>
   <img src="results/1/mode_3_plus.jpg" width="30%"></img>
   <img src="results/1/aligned_pointsets.jpg" width="30%"></img>
   <img src="results/1/mode_3_minus.jpg" width="30%"></img>
