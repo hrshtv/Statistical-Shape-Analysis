@@ -3,8 +3,6 @@ import numpy as np
 from tqdm import tqdm
 from scipy.io import savemat
 
-SHAPE = [5, 58, 240] # D + 3(point no, to, from), N, M
-
 data = []
 
 for i, fpath in enumerate(tqdm(glob.glob("pointsets/*.txt"))):
